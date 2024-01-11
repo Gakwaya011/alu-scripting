@@ -1,11 +1,3 @@
 #!/usr/bin/env ruby
 
-regex = /hbt{2,5}n/
-
-ARGV.each do |arg|
-  if arg.match?(regex)
-    puts arg
-  else
-    puts ''
-  end
-end
+puts ARGV[0].scan(/hbt{9}|hbt{2,}n/).join
