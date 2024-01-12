@@ -1,6 +1,3 @@
 #!/usr/bin/env ruby
 
-match = ARGV[0].match(/\b\d{10}\b/)
-
-puts match[0] if match
-
+puts ARGV[0].scan(/^\d{10}$/).join
